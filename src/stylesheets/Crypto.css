@@ -1,0 +1,119 @@
+
+.masterdiv {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-principal{
+
+  width: 45rem;
+  background-color: rgb(255, 255, 255);
+  padding: .8rem;
+  box-shadow: 1rem 1rem 0rem black;
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12rem;
+}
+
+.logo-nombre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.costosCrypto{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.costosCrypto h2{
+  font-size: 4rem;
+  color: rgb(0, 0, 0);
+}
+
+.ver-mas {
+  text-align: center;
+  width: 8rem;
+  height: 1.6rem;
+
+  background-color: black;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.ver-mas a{
+  text-decoration: none;
+  color: white;
+}
+
+.ver-mas:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
+
+  background-color: rgb(37, 37, 37);
+}
+
+.crypto-btc-precio {
+  font-size: 3rem;
+  color: #F89D2E
+}
+
+.crypto-eth-precio {
+  font-size: 3rem;
+  color: #627EEA;
+}
+
+.crypto-dot-precio {
+  font-size: 3rem;
+  color: rgb(255, 46, 144);
+}
+
+.crypto-xrp-precio {
+  font-size: 3rem;
+  color: #3c7aff;
+}
+
+.titulo-moneda{
+  color: rgb(0, 0, 0);
+  font-size: 4rem;
+  text-align: center;
+}
+
+.crypto-btc-img {
+  width: 19rem;
+} 
+
+.crypto-eth-img {
+  width: 19rem;
+}
+
+.crypto-dot-img {
+  width: 19rem;
+}
+
+.crypto-xrp-img {
+  width: 19rem;
+}
+
+.descripcion {
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  text-align: center;
+  width: 42rem;
+}
+
+

@@ -1,38 +1,250 @@
-.App {
-  text-align: center;
+
+* {
+  font-family: Consolas ,sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body{
+  background-color: rgb(243, 243, 243);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+hr {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.barra-navegacion {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  background-color: rgb(27, 27, 27);
+  padding: .8rem;
+}
+
+.titulo-crypto{
   color: white;
+  font-size: 2.2rem;
+  margin-top: .2rem;
+} 
+
+.titulo-crypto span{
+  color: rgb(255, 251, 16);
 }
 
-.App-link {
-  color: #61dafb;
+.shortcuts {
+  display: flex;
+  justify-content: space-evenly;
+  width: 28rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.shortcuts a{
+  background-color: rgb(46, 46, 46);
+  padding: .8rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(255, 248, 236);
+}
+
+.bitcoin-nav:hover{
+  transition-duration: .5s;
+  color: rgb(228, 228, 0);
+}
+
+.polkadot-nav:hover{
+  transition-duration: .5s;
+  color: rgb(255, 46, 144);
+}
+
+.ether-nav:hover{
+  transition-duration: .5s;
+  color: rgb(136, 32, 255);
+} 
+
+.ripple-nav:hover{
+  transition-duration: .5s;
+  color: rgb(0, 153, 255);
+}
+
+.contenedor-recepcion {
+  padding: 7rem;
+  background: rgb(152,141,141);
+  background: rgb(80,80,80);
+  background: linear-gradient(90deg, rgba(80,80,80,1) 0%, rgba(45,45,45,1) 31%, rgba(0,0,0,1) 100%);
+}
+
+
+.contenedor-texto {
+  position: relative;
+  z-index: 5;
+
+  text-align: center;
+  color: white;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenedor-texto span{
+  color: rgb(255, 251, 16);
+}
+
+.welcome {
+  width: 30rem;
+  font-size: 4.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.welcome-text{
+  padding: 2rem;
+  color: white;
+  background-color: rgb(27, 27, 27) ;
+  font-size: 1.3rem;
+  width: 20rem;
+  text-align:start;
+}
+
+.welcome-flecha {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 8rem;
+
+  animation-name: dezplasar;
+  animation-duration: 1.3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dezplasar {
+  0%{
+    top: -1rem;
   }
-  to {
+
+  100%{
+    top: 4rem;
+  }
+}
+
+
+.img-dot {
+  z-index: 0;
+
+  height: 8rem;
+  position: absolute;
+  left: 8rem;
+  top: 9rem;
+
+  transform: rotate(320deg);
+}
+
+.img-eth {
+  z-index: 1;
+
+  height: 8rem;
+  position: absolute;
+  right: 13rem;
+  top: 12rem;
+
+  transform: rotate(320deg);
+}
+
+.img-xrp {
+  z-index: 3;
+
+  height: 9rem;
+  position: absolute;
+  right: 20%;
+  top: 38rem;
+
+}
+
+.img-btc {
+  z-index: 4;
+
+  height: 32rem;
+  object-fit: cover;
+  position: absolute;
+  left: 2rem;
+  top: 28rem;
+
+  animation-name: rotarse;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotarse {
+  100%{
     transform: rotate(360deg);
   }
 }
+
+.cryptos-envoltura {
+  margin-top: 22rem;
+}
+
+.principal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: white;
+  background-color: black;
+  padding: 3rem;
+}
+
+.descripcion-pie {
+  margin-top: 2rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.descripcion-pie h5{
+  color: #FFFB10;
+}
+
+.lado {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lado a{
+  text-decoration: none;
+
+  color: rgb(139, 139, 139);
+}
+
+.lado a:hover {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
