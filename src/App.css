@@ -68,6 +68,31 @@ hr {
   color: rgb(0, 153, 255);
 }
 
+.idiomas {
+  width:  13.306rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.idiomas button {
+  width: 30%;
+  font-family: sans-serif;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  border:  solid yellow;
+  border-width: .12rem;
+  border-radius: 1rem;
+  padding: .2rem;
+  transition-property: color, background-color, border-color;
+  transition-duration: 500ms;
+}
+
+.idiomas button:hover{
+  border-color: rgb(255, 255, 255);
+  color: #FFFB10;
+  background-color: rgb(58, 58, 58);
+}
+
 .contenedor-recepcion {
   padding: 7rem;
   background: rgb(152,141,141);
@@ -94,7 +119,7 @@ hr {
 }
 
 .welcome {
-  width: 30rem;
+  width: 32rem;
   font-size: 4.5rem;
   flex-wrap: wrap;
   margin-bottom: 2rem;
@@ -131,7 +156,6 @@ hr {
     top: 4rem;
   }
 }
-
 
 .img-dot {
   z-index: 0;
@@ -212,39 +236,18 @@ hr {
   color: #FFFB10;
 }
 
-.lado {
+.enlaces-footer {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.lado a{
+.enlaces-footer a{
   text-decoration: none;
 
   color: rgb(139, 139, 139);
 }
 
-.lado a:hover {
+.enlaces-footer a:hover {
   color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

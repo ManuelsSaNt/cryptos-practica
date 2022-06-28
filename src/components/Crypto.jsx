@@ -2,11 +2,14 @@
 import '../stylesheets/Crypto.css'
 import axios from 'axios';
 import {useEffect , useState} from 'react';
+import { useTranslation } from "react-i18next";
 
 
 
 
 function Cryptomoneda({ moneda , foto , descrip , altImage , symbol}){
+  const [t, i18n] = useTranslation("global")
+
 
   const [costOfBitcoin, setCostOfBitcoin] = useState([])
   const [costOfEthereum, setCostOfEthereum] = useState([])
@@ -15,11 +18,16 @@ function Cryptomoneda({ moneda , foto , descrip , altImage , symbol}){
 
   const getData =  async () =>{
     var res = await axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2Cripple%2Cpolkadot%2Cethereum&order=market_cap_desc&per_page=100&page=1&sparkline=false')
-    setCostOfBitcoin(res.data[0]['current_price'])
-    setCostOfEthereum(res.data[1]['current_price'])
-    setCostOfRipple(res.data[2]['current_price'])
-    setCostOfPolkadot(res.data[3]['current_price'])
+    
+    function precio(indice){
+      var dato = res.data
+      return dato[indice]['current_price']
+    }
 
+    setCostOfBitcoin(precio(0))
+    setCostOfEthereum(precio(1))
+    setCostOfRipple(precio(2))
+    setCostOfPolkadot(precio(3))
   }
 
   useEffect(()=>{
@@ -50,7 +58,7 @@ function Cryptomoneda({ moneda , foto , descrip , altImage , symbol}){
               </div>
 
               <div className='ver-mas'>
-                <a target='_blank' href={`https://www.coingecko.com/es/monedas/${moneda}`.toLowerCase()}>More info </a>
+                <a target='_blank' href={`https://www.coingecko.com/es/monedas/${moneda}`.toLowerCase()}>{t("more-info")}</a>
               </div>
 
 
