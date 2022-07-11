@@ -4,8 +4,7 @@ import { useTranslation } from "react-i18next";
 
 function App() {
 
-  const [t, i18n] = useTranslation("global")
-
+  const [t, i18n] = useTranslation("global")  
 
   return (
     <div className="App">
