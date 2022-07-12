@@ -79,7 +79,7 @@ hr {
   font-family: sans-serif;
   background-color: rgb(36, 36, 36);
   color: white;
-  border-color: rgb(255, 255, 255);
+  border-color: rgba(255, 255, 255, 0);
   padding: .5rem 0rem;
   transition-property: color, background-color, border-color;
   transition-duration: 500ms;
@@ -95,7 +95,7 @@ hr {
   padding: 7rem;
   background: rgb(152,141,141);
   background: rgb(80,80,80);
-  background: linear-gradient(90deg, rgba(80,80,80,1) 0%, rgba(45,45,45,1) 31%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(80,80,80,1) 0%, rgba(45,45,45,1) 31%, rgba(0,0,0,1) 100%);
 }
 
 
@@ -130,6 +130,7 @@ hr {
   font-size: 1.3rem;
   width: 20rem;
   text-align:start;
+  box-shadow: #fffb10c5 .5rem .5rem;
 }
 
 .welcome-flecha {
