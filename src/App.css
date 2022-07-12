@@ -75,20 +75,18 @@ hr {
 }
 
 .idiomas button {
-  width: 30%;
+  width: 48%;
   font-family: sans-serif;
   background-color: rgb(36, 36, 36);
   color: white;
-  border:  solid yellow;
-  border-width: .12rem;
-  border-radius: 1rem;
-  padding: .2rem;
+  border-color: rgb(255, 255, 255);
+  padding: .5rem 0rem;
   transition-property: color, background-color, border-color;
   transition-duration: 500ms;
 }
 
 .idiomas button:hover{
-  border-color: rgb(255, 255, 255);
+  border-color: #FFFB10;
   color: #FFFB10;
   background-color: rgb(58, 58, 58);
 }

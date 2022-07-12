@@ -6,6 +6,7 @@ function App() {
 
   const [t, i18n] = useTranslation("global")  
 
+
   return (
     <div className="App">
       <header>
@@ -13,8 +14,8 @@ function App() {
           <h1 className='titulo-crypto'>Crypto<span>World</span></h1>
           <div className='shortcuts'>
             <a href='#btc-part' className='bitcoin-nav'>Bitcoin</a>
-            <a href='#dot-part' className='polkadot-nav'>Polkadot</a>
             <a href='#eth-part' className='ether-nav'>Ethereum</a>
+            <a href='#dot-part' className='polkadot-nav'>Polkadot</a>
             <a href='#xrp-part' className='ripple-nav'>Ripple</a>
           </div>
           <div className='idiomas'>
